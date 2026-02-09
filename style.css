@@ -1,0 +1,152 @@
+body{
+  font-family: "Lora";
+  background-color: #f5f1e5;
+  color: #001427;
+  font-size: 14px;
+  line-height: normal;
+  /*padding: 25px;
+  text-align: center;*/
+}
+
+/* headers hell*/
+h1,h2 {
+  line-height: 100%;
+}
+
+h1 {
+  font-family: "Bauhaus 93";
+  font-size: 30px;
+  font-weight: 600;
+  color: #BF0603;
+}
+
+h2 {
+  font-family: "Poppins";
+  color: #5A2328;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 50%;
+  font-weight: 300;
+  color: #708D81;
+}
+
+/* link hell*/
+a {
+  text-decoration: none;
+  color:#BF0603;
+  font-size: 16px;
+  font-weight: bolder;
+  transition: 0.3s ease;
+}
+
+a:hover{
+  color: #001427;
+}
+
+/* ------my classes--------*/
+
+.main-headers h2 {
+  color:#001427;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/* list management: s'applique au li et ul différemment*/
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-successive {
+  list-style-position: inside;
+  text-align: left;
+}
+
+/* pciture management*/
+#profile-pic{
+  width:200px;
+  height:200px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+/* button*/
+.red-button {
+  background: #BF0603;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* border: 0.5px solid lightgrey; */
+  border-radius: 5px;
+  margin: 10px auto;
+  width: fit-content;
+}
+
+.button-whitetext {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+.socials a {
+  font-size: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*containers*/
+
+.container {
+  width: 700px;   /* Définit la largeur */
+  margin: 0 auto; /* Définit automatiquement les marges à gauche/droite */
+}
+
+/*varying containers*/
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
+
+/*others*/
+
+.card-white {
+  background: whitesmoke;
+  padding: 30px;
+  /* border: 0.5px solid lightgrey; */
+  border-radius: 5px;
+  margin: 16px auto;
+}
+
+.light-shadow {
+  box-shadow: 0 0 10px rgb(0,0,0,.1);
+}
