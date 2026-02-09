@@ -1,9 +1,13 @@
-body{
+body {
   font-family: "Lora";
-  background-color: #f5f1e5;
   color: #001427;
   font-size: 14px;
   line-height: normal;
+  background-image: url("https://wallup.net/wp-content/uploads/2017/11/17/217066-city-cityscape-Belgium-Brussels-garden-architecture-statue.jpg");
+  backdrop-filter: blur(10px) grayscale(10%);
+  /* backdrop-filter: grayscale(30%); */
+  background-repeat:no-repeat;
+  background-size:cover;
   /*padding: 25px;
   text-align: center;*/
 }
@@ -14,24 +18,24 @@ h1,h2 {
 }
 
 h1 {
-  font-family: "Bauhaus 93";
-  font-size: 30px;
+  font-family: "Britannic Bold";
+  font-size: 48px;
   font-weight: 600;
-  color: #BF0603;
+  color: #F0F8FF;
 }
 
 h2 {
   font-family: "Poppins";
-  color: #5A2328;
+  color: #001427;
   font-size: 20px;
   font-weight: 700;
 }
 
 h3 {
   font-family: "Poppins";
-  font-size: 20px;
+  font-size: 18px;
   line-height: 50%;
-  font-weight: 300;
+  font-weight: 400;
   color: #708D81;
 }
 
@@ -49,6 +53,14 @@ a:hover{
 }
 
 /* ------my classes--------*/
+/* footer and header*/
+.big-red-header h2{
+  font-family: "Britannic Bold";
+  font-size: 48px;
+  font-weight: 600;
+  color: #BF0603;
+  line-height: normal;
+}
 
 .main-headers h2 {
   color:#001427;
@@ -70,6 +82,11 @@ a:hover{
 .list-successive {
   list-style-position: inside;
   text-align: left;
+  list-style: none;
+}
+
+.list-successive li::before {
+  content: '🎈 ';
 }
 
 /* pciture management*/
@@ -101,7 +118,7 @@ a:hover{
 }
 
 .socials a {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .text-center {
@@ -147,6 +164,34 @@ a:hover{
   margin: 16px auto;
 }
 
+.footer {
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
 .light-shadow {
   box-shadow: 0 0 10px rgb(0,0,0,.1);
+}
+
+.grid-container-element-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 700px;
+    margin: 0 auto
+}
+.grid-child-element-footer {
+    margin: auto auto;
+}
+
+.grid-container-element {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 700px;
+    margin: 16px auto
+}
+
+.grid-child-element {
+    margin: 0 auto;
 }
